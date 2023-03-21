@@ -5,18 +5,6 @@
     padding: 0;
 }
 
-.sitename {
-    letter-spacing: 10px;
-    word-spacing: 5px;
-    color: white;
-    text-transform: capitalize;
-    font-weight: bold;
-    width: auto;
-    border: none;
-    font-size: 40px;
-    max-width: 100%;
-}
-
 header {
     font-family: 'Roboto';
     padding-bottom: 10px;
@@ -118,6 +106,19 @@ h4 {
     color: darkmagenta;
 }
 
+.sitename {
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: auto;
+    border: none;
+    font-size: 40px;
+    max-width: 100%;
+}
+
+/* Pseudoclases */
 a:link {
     color: darkblue;
 }
@@ -135,6 +136,7 @@ a:visited {
     color: darkviolet;
 }
 
+/* Grid Layout y sus componentes */
 .gridlayout {
     display: grid;
     grid-template-columns: auto;
@@ -163,6 +165,7 @@ a:visited {
     color: white;
 }
 
+/* Media Queries */
 @media screen and (max-width:600px) {
 
     li,
