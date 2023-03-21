@@ -28,10 +28,6 @@ li {
 
 }
 
-body {
-    background-color: gainsboro;
-}
-
 p {
     font-weight: normal;
     font-family: 'Roboto';
@@ -181,7 +177,7 @@ a:visited {
 
 @media screen and (min-width: 768px) {
     body {
-        background-color: whitesmoke;
+        background-color: gainsboro;
     }
 }
 
