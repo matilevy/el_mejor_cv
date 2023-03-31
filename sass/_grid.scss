@@ -1,0 +1,35 @@
+/* Grid Layout y sus componentes */
+
+.gridlayout {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+.gridheader {
+    grid-column: 1 / span 3;
+    background-color: #212529;
+    text-align: center;
+}
+
+@mixin gridsectionstyle {
+    grid-column: 1;
+    margin: 20px 20px 20px 20px;
+}
+
+.gridsection1,
+.gridsection2,
+.gridsection3 {
+    @include gridsectionstyle;
+}
+
+.gridfooter {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Poppins';
+    grid-column: 1 / span 3;
+    background-color: #212529;
+    color: white;
+}
