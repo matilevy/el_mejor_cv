@@ -19,7 +19,7 @@ p {
     font-weight: normal;
     font-family: 'Poppins';
     font-size: 16px;
-    line-height: 40px;
+    line-height: 20px;
     margin: 10px 10px;
     padding: 10px;
     color: whitesmoke;
@@ -36,6 +36,12 @@ img {
     padding: 10px;
     border-radius: 30px;
     max-width: 80%;
+    padding: 30px 30px 30px 30px;
+}
+
+img:hover {
+    transform: translate(3px 3px);
+    transform: scale(1.2, 1.2);
 }
 
 h1 {
@@ -56,7 +62,7 @@ h2 {
     margin: 10px 10px 10px 10px;
     font-family: 'Poppins';
     font-size: 20px;
-    color: deeppink;
+    color: deepskyblue;
 }
 
 h3 {
@@ -76,7 +82,7 @@ h4 {
     font-family: 'Poppins';
     font-size: 20px;
     text-decoration-line: underline;
-    color: mediumaquamarine;
+    color: deeppink;
 }
 
 .sitetitle {
@@ -85,12 +91,15 @@ h4 {
     color: antiquewhite;
     background-color: inherit;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: bolder;
     width: auto;
     border: none;
     font-size: 40px;
     max-width: 100%;
-
+    background-image: linear-gradient(blueviolet, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sitesubtitle {
@@ -103,6 +112,24 @@ h4 {
     max-width: 100%;
     word-spacing: 10px;
     padding-bottom: 10px;
+    background-image: linear-gradient(deepskyblue, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.click {
+    text-align: center;
+    background: antiquewhite;
+    width: 40%;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.click:focus {
+    background: rgb(49, 15, 49);
+    color: white;
+    outline-style: solid;
 }
 
 /* Pseudoclases */
@@ -138,11 +165,21 @@ a:visited {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    p {
+        line-height: normal;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .gridlayout {
         grid-template-columns: 20% auto 20%;
+    }
+
+    p,
+    li {
+        line-height: 40px;
+        word-spacing: 2px;
     }
 
     .gridsection1,
@@ -151,9 +188,9 @@ a:visited {
         grid-column: 2;
     }
 
-    .gridsection111,
-    .gridsection222,
-    .gridsection333 {
+    .gridsection11,
+    .gridsection22,
+    .gridsection33 {
         grid-column: 1/4;
     }
 }
