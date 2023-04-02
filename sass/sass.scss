@@ -30,13 +30,12 @@ p {
 
 img {
     height: auto;
-    max-block-size: 500px;
-    max-width: 1200px;
-    margin: 5px 5px 5px 5px;
-    padding: 5px;
-    border-radius: 50px;
-    max-width: 80%;
-    padding: 30px 30px 30px 30px;
+    max-block-size: 400px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    max-width: 105%;
+    display:inline-block;
+    position: relative;
 }
 
 .nav-item {
@@ -61,14 +60,14 @@ img:hover {
 h1 {
     margin: 20px 20px 20px 20px;
     font-family: 'Poppins';
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
     color: white;
     padding: 15px;
+    font-weight: lighter;
     border: groove plum;
     width: fit-content;
     border-radius: 50px;
-    max-width: 70%;
     background-color: rgb(73, 73, 133);
 }
 
@@ -82,13 +81,15 @@ h2 {
 h3 {
     margin: 20px 20px 20px 20px;
     font-family: 'Poppins';
+    font-weight: bold;
     font-size: 20px;
-    border: groove 5px;
-    border-radius: 15px;
-    padding: 10px;
+    color: white;
+    padding: 15px;
+    font-weight: lighter;
+    border: groove whitesmoke;
     width: fit-content;
-    color: whitesmoke;
-    background-color: darkslateblue;
+    border-radius: 30px;
+    background-color:darkslategrey;
 }
 
 h4 {
@@ -96,17 +97,17 @@ h4 {
     font-family: 'Poppins';
     font-size: 20px;
     text-decoration-line: underline;
-    color: deeppink;
+    color:cornflowerblue;
 }
 
 .sitetitle {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     word-spacing: 5px;
     color: antiquewhite;
     background-color: inherit;
     text-transform: capitalize;
-    font-weight: bolder;
-    width: auto;
+    font-weight: bold;
+    width:auto;
     border: none;
     font-size: 30px;
     max-width: 100%;
@@ -120,7 +121,7 @@ h4 {
     color: deepskyblue;
     text-transform: capitalize;
     font-weight: bold;
-    width: auto;
+    width:auto;
     border: none;
     font-size: 18px;
     max-width: 100%;
@@ -170,8 +171,8 @@ a:visited {
 /* Media Queries */
 @media screen and (max-width: 600px) {
 
-    li,
-    p {
+    li, h1, h2, h3, h4,
+    p, {
         font-size: smaller;
         line-height: smaller;
     }
@@ -212,8 +213,8 @@ a:visited {
 
     .websitelogo {
 
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 250px;
+        max-height: 250px;
     }
 
     .nav-item {
