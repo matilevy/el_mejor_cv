@@ -32,12 +32,26 @@ img {
     height: auto;
     max-block-size: 500px;
     max-width: 1200px;
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
-    border-radius: 30px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 50px;
     max-width: 80%;
     padding: 30px 30px 30px 30px;
 }
+
+.nav-item {
+
+    font-size: smaller;
+}
+
+.websitelogo {
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 
 img:hover {
     transform: translate(3px 3px);
@@ -94,7 +108,7 @@ h4 {
     font-weight: bolder;
     width: auto;
     border: none;
-    font-size: 40px;
+    font-size: 30px;
     max-width: 100%;
     background-image: linear-gradient(blueviolet, white);
     background-clip: text;
@@ -108,7 +122,7 @@ h4 {
     font-weight: bold;
     width: auto;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     max-width: 100%;
     word-spacing: 10px;
     padding-bottom: 10px;
@@ -194,5 +208,16 @@ a:visited {
     .gridsection22,
     .gridsection33 {
         grid-column: 1/4;
+    }
+
+    .websitelogo {
+
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .nav-item {
+
+        font-size: medium;
     }
 }
