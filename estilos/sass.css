@@ -117,12 +117,6 @@ img {
   font-size: smaller;
 }
 
-.websitelogo {
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 20px;
-}
-
 img:hover {
   transform: translate(3px 3px);
   transform: scale(1.2, 1.2);
@@ -175,7 +169,22 @@ h4 {
 
 .sitetitle {
   border-style: none;
-  background: none;
+  background-image: linear-gradient(magenta, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  padding: 5px;
+}
+
+.cvicon {
+  width: 20%;
+  float: left;
+  padding: 0px;
+  border-radius: 25px;
+  margin-right: 25px;
 }
 
 .click {
