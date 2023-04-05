@@ -108,7 +108,7 @@ img {
   max-block-size: 400px;
   padding: 20px 20px 20px 20px;
   border-radius: 40px;
-  max-width: 105%;
+  max-width: 100%;
   display: inline-block;
   position: relative;
 }
@@ -174,16 +174,15 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: xx-large;
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  padding: 5px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 .cvicon {
   width: 20%;
-  float: left;
-  padding: 0px;
-  border-radius: 25px;
+  float: inline-start;
+  padding: 5px;
+  border-radius: 10px;
   margin-right: 25px;
 }
 
@@ -192,8 +191,8 @@ h4 {
   font-weight: bolder;
   background: darkgrey;
   color: black;
-  width: 40%;
   cursor: pointer;
+  width: 50%;
   transition: all 2s;
 }
 
