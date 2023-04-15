@@ -10,7 +10,7 @@ li {
     margin-bottom: 20px;
     line-height: 30px;
     max-inline-size: 3000px;
-    max-width: 70%;
+    
     color: aliceblue;
 }
 
@@ -24,21 +24,19 @@ p {
     color: whitesmoke;
     text-indent: 10px;
     max-inline-size: 3000px;
-    max-width: 70%;
-}
+    }
 
 img {
     height: auto;
-    max-block-size: 400px;
+    max-block-size: 800px;
     padding: 20px 20px 20px 20px;
     border-radius: 40px;
-    max-width: 100%;
-    display: inline-block;
-    position: relative;
-}
+    max-width: 97%;
+    }
 
 .nav-item {
     font-size: smaller;
+    text-align: center;
 }
 
 img:hover {
@@ -54,10 +52,13 @@ h1 {
     color: white;
     padding: 15px;
     font-weight: lighter;
-    border: groove plum;
-    width: fit-content;
+    border:double grey;
+    text-align: center;
+    border:double grey;
     border-radius: 50px;
     background-color: rgb(73, 73, 133);
+    text-align: center;
+     
 }
 
 h2 {
@@ -65,6 +66,7 @@ h2 {
     font-family: 'Poppins';
     font-size: 20px;
     color: deepskyblue;
+    text-align: center;
 }
 
 h3 {
@@ -79,6 +81,7 @@ h3 {
     width: fit-content;
     border-radius: 30px;
     background-color: darkslategrey;
+    text-align: center;
 }
 
 h4 {
@@ -87,6 +90,7 @@ h4 {
     font-size: 20px;
     text-decoration-line: underline;
     color: cornflowerblue;
+    text-align: center;
 }
 
 .sitetitle {
@@ -98,11 +102,13 @@ h4 {
     font-size: xx-large;
     letter-spacing: 2px;
     word-spacing: 2px;
-}
+    text-align: center;
+    word-spacing: 5px; 
+    letter-spacing: 5px;
+    }
 
 .cvicon {
     width: 20%;
-    float: inline-start;
     padding: 5px;
     border-radius: 10px;
     margin-right: 25px;
@@ -124,6 +130,13 @@ h4 {
     outline-style: solid;
 
 }
+
+form{
+    text-align: center;
+}
+
+
+
 
 /* Pseudoclases */
 a:link {
@@ -173,28 +186,32 @@ a:visited {
 
 @media screen and (min-width: 1024px) {
     .gridlayout {
-        grid-template-columns: 20% auto 20%;
+        grid-template-columns: 20% 30% 30% 20%;
     }
 
     p,
     li {
         line-height: 40px;
         word-spacing: 2px;
+        grid-column: 3/3;
     }
 
     .gridsection1,
     .gridsection2,
     .gridsection3 {
-        grid-column: 2;
+        grid-column: 2/4;
+        
     }
-
+    .gridheader,
     .gridsection11,
     .gridsection22,
-    .gridsection33 {
-        grid-column: 1/4;
+    .gridsection33,.gridfooter {
+        grid-column: 1/5;
     }
-
+    
     .nav-item {
         font-size: medium;
+    
     }
+    
 }
