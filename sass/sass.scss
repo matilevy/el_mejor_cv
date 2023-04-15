@@ -10,7 +10,7 @@ li {
     margin-bottom: 20px;
     line-height: 30px;
     max-inline-size: 3000px;
-    
+
     color: aliceblue;
 }
 
@@ -24,15 +24,13 @@ p {
     color: whitesmoke;
     text-indent: 10px;
     max-inline-size: 3000px;
-    }
+}
 
 img {
-    height: auto;
-    max-block-size: 800px;
-    padding: 20px 20px 20px 20px;
-    border-radius: 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
     max-width: 97%;
-    }
+}
 
 .nav-item {
     font-size: smaller;
@@ -52,13 +50,13 @@ h1 {
     color: white;
     padding: 15px;
     font-weight: lighter;
-    border:double grey;
+    border: double grey;
     text-align: center;
-    border:double grey;
+    border: double grey;
     border-radius: 50px;
     background-color: rgb(73, 73, 133);
     text-align: center;
-     
+
 }
 
 h2 {
@@ -103,9 +101,9 @@ h4 {
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: center;
-    word-spacing: 5px; 
+    word-spacing: 5px;
     letter-spacing: 5px;
-    }
+}
 
 .cvicon {
     width: 20%;
@@ -131,11 +129,9 @@ h4 {
 
 }
 
-form{
+form {
     text-align: center;
 }
-
-
 
 
 /* Pseudoclases */
@@ -156,9 +152,7 @@ a:visited {
     color: antiquewhite;
 }
 
-.nav-link active {
-    font-size: x-large;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
@@ -175,43 +169,83 @@ a:visited {
 
     footer {
         font-size: 10px;
-    }
+     }
+     
+
+    
+
 }
 
-@media screen and (min-width: 768px) {
-    p {
-        line-height: normal;
-    }
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .nav-item{
+        font-size:x-small;
+     }
+
+
+.gridlayout {
+grid-template-columns: auto;
+}
+.gridheader{
+    grid-column: auto;
 }
 
+
+}
 @media screen and (min-width: 1024px) {
     .gridlayout {
-        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-columns: 10% 40% 40% 10%;
+
     }
 
     p,
     li {
         line-height: 40px;
         word-spacing: 2px;
-        grid-column: 3/3;
+
     }
 
-    .gridsection1,
+    .gridsection1 {
+        grid-column: 2/4;
+    }
+
     .gridsection2,
     .gridsection3 {
-        grid-column: 2/4;
-        
+        grid-column: 2/3;
+
+
     }
+
     .gridheader,
     .gridsection11,
-    .gridsection22,
-    .gridsection33,.gridfooter {
+    .gridsection222,
+    .gridsection333,
+    .gridfooter {
         grid-column: 1/5;
     }
+
     
-    .nav-item {
-        font-size: medium;
-    
+    .gridsection22,
+    .gridsection33 {
+        grid-column: 3/4;
+
     }
-    
+
+    .gridsection2,
+    .gridsection22,
+    .gridsection222 {
+        grid-row: 3;
+    }
+
+
+    .gridsection3,
+    .gridsection33,
+    .gridsection333 {
+
+        grid-row: 4;
+
+    }
 }
