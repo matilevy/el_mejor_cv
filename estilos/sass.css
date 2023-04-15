@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,17 +14,21 @@ header {
   padding-bottom: 5px;
   text-align: justify;
 }
+
 header nav {
   width: 100%;
 }
+
 header nav ul {
   display: flex;
   justify-content: space-evenly;
 }
+
 header nav ul li {
   list-style-type: unset;
   text-transform: none;
 }
+
 header nav ul li a {
   text-decoration: none;
 }
@@ -212,12 +217,14 @@ h4 {
   cursor: pointer;
   width: 50%;
   transition: all 2s;
+  border-radius: 30px;
 }
 
 .click:focus {
   background: rgb(49, 15, 49);
   color: white;
   outline-style: solid;
+  border-radius: 30px;
 }
 
 form {
@@ -226,24 +233,25 @@ form {
 
 /* Pseudoclases */
 a:link {
-  color: lightblue;
+  color: deepskyblue;
 }
 
 a:hover {
   font-weight: bolder;
-  color: lightblue;
-}
-
-a:active {
-  color: darkslateblue;
+  color: deeppink;
 }
 
 a:visited {
-  color: antiquewhite;
+  color: bisque;
+}
+
+a:active {
+  color: darkorchid;
 }
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
+
   li,
   h1,
   h2,
@@ -253,39 +261,48 @@ a:visited {
     font-size: smaller;
     line-height: smaller;
   }
+
   footer {
     font-size: 10px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .nav-item {
     font-size: x-small;
   }
+
   .gridlayout {
     grid-template-columns: auto;
   }
+
   .gridheader {
     grid-column: auto;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .gridlayout {
     grid-template-columns: 10% 40% 40% 10%;
     -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
+
   p,
   li {
     line-height: 40px;
     word-spacing: 2px;
   }
+
   .gridsection1 {
     grid-column: 2/4;
   }
+
   .gridsection2,
-  .gridsection3 {
+  .gridsection33 {
     grid-column: 2/3;
   }
+
   .gridheader,
   .gridsection11,
   .gridsection222,
@@ -293,18 +310,23 @@ a:visited {
   .gridfooter {
     grid-column: 1/5;
   }
+
   .gridsection22,
-  .gridsection33 {
+  .gridsection3 {
     grid-column: 3/4;
   }
+
   .gridsection2,
   .gridsection22,
   .gridsection222 {
     grid-row: 3;
   }
+
   .gridsection3,
   .gridsection33,
   .gridsection333 {
     grid-row: 4;
   }
-}/*# sourceMappingURL=sass.css.map */
+}
+
+/*# sourceMappingURL=sass.css.map */

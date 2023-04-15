@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto;
-row-gap:1px;
+    row-gap: 1px;
 }
 
 .gridheader {
@@ -24,19 +24,22 @@ row-gap:1px;
 .gridsection22,
 .gridsection222 {
     background-color: #343a41;
-    
+
 }
-.gridsection2{
+
+.gridsection2 {
     grid-row: 3/4;
 }
-.gridsection22{
+
+.gridsection22 {
     grid-row: 4/5;
 }
 
-.gridsection3{
+.gridsection3 {
     grid-row: 5/6;
 }
-.gridsection33{
+
+.gridsection33 {
     grid-row: 6/7;
 }
 
@@ -44,7 +47,7 @@ row-gap:1px;
 .gridsection33,
 .gridsection333 {
     background-color: #181b1d;
-    }
+}
 
 @mixin gridsectionstyle {
     grid-column: 1;

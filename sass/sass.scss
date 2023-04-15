@@ -119,12 +119,14 @@ h4 {
     cursor: pointer;
     width: 50%;
     transition: all 2s;
+    border-radius: 30px;
 }
 
 .click:focus {
     background: rgb(49, 15, 49);
     color: white;
     outline-style: solid;
+    border-radius: 30px;
 
 }
 
@@ -132,26 +134,23 @@ form {
     text-align: center;
 }
 
-
 /* Pseudoclases */
 a:link {
-    color: lightblue;
+    color: deepskyblue;
 }
 
 a:hover {
     font-weight: bolder;
-    color: lightblue;
-}
-
-a:active {
-    color: darkslateblue;
+    color: deeppink;
 }
 
 a:visited {
-    color: antiquewhite;
+    color: bisque;
 }
 
-
+a:active {
+    color: darkorchid;
+}
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
@@ -168,43 +167,35 @@ a:visited {
 
     footer {
         font-size: 10px;
-     }
-     
-
-    
-
+    }
 }
-
-
 
 
 @media screen and (max-width: 1024px) {
 
-    .nav-item{
-        font-size:x-small;
-     }
+    .nav-item {
+        font-size: x-small;
+    }
 
+    .gridlayout {
+        grid-template-columns: auto;
+    }
 
-.gridlayout {
-grid-template-columns: auto;
+    .gridheader {
+        grid-column: auto;
+    }
 }
-.gridheader{
-    grid-column: auto;
-}
 
-
-}
 @media screen and (min-width: 1024px) {
     .gridlayout {
         grid-template-columns: 10% 40% 40% 10%;
-column-gap: 30px;
+        column-gap: 30px;
     }
 
     p,
     li {
         line-height: 40px;
         word-spacing: 2px;
-
     }
 
     .gridsection1 {
@@ -212,10 +203,8 @@ column-gap: 30px;
     }
 
     .gridsection2,
-    .gridsection3 {
+    .gridsection33 {
         grid-column: 2/3;
-
-
     }
 
     .gridheader,
@@ -226,11 +215,9 @@ column-gap: 30px;
         grid-column: 1/5;
     }
 
-    
     .gridsection22,
-    .gridsection33 {
+    .gridsection3 {
         grid-column: 3/4;
-
     }
 
     .gridsection2,
@@ -239,12 +226,9 @@ column-gap: 30px;
         grid-row: 3;
     }
 
-
     .gridsection3,
     .gridsection33,
     .gridsection333 {
-
         grid-row: 4;
-
     }
 }
