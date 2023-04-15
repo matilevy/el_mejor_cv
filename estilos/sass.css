@@ -33,6 +33,7 @@ header nav ul li a {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto;
+  row-gap: 1px;
 }
 
 .gridheader {
@@ -73,7 +74,7 @@ header nav ul li a {
 .gridsection3,
 .gridsection33,
 .gridsection333 {
-  background-color: #3b4147;
+  background-color: #181b1d;
 }
 
 .gridsection1,
@@ -270,6 +271,8 @@ a:visited {
 @media screen and (min-width: 1024px) {
   .gridlayout {
     grid-template-columns: 10% 40% 40% 10%;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   p,
   li {

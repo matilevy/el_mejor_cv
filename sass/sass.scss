@@ -10,7 +10,6 @@ li {
     margin-bottom: 20px;
     line-height: 30px;
     max-inline-size: 3000px;
-
     color: aliceblue;
 }
 
@@ -198,7 +197,7 @@ grid-template-columns: auto;
 @media screen and (min-width: 1024px) {
     .gridlayout {
         grid-template-columns: 10% 40% 40% 10%;
-
+column-gap: 30px;
     }
 
     p,
